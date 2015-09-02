@@ -60,12 +60,9 @@ html body {
     transition: transform 1s ease-in-out;
     will-change: transform; }
     .wrapper .page h2 {
-      border: 2px solid white;
-      border-radius: 2em;
-      padding: 1em;
       color: white;
       position: absolute;
-      top: 20%;
+      top: 50%;
       left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
@@ -85,11 +82,16 @@ html body {
             background-image: -webkit-linear-gradient(-315deg, #f29c54 0%, #DB4367 100%);
             background-image: -webkit-linear-gradient(45deg, #f29c54 0%, #DB4367 100%);
             background-image: linear-gradient(45deg, #f29c54 0%, #DB4367 100%);*/ }
+      .wrapper .page.page2 h2 {
+        color: #0022C4;
+        font-weight: bolder; }
     .wrapper .page.page3 {
       background-color: #23af56;
       background-image: -webkit-linear-gradient(-405deg, #23af56 0%, #67A79A 100%);
       background-image: -webkit-linear-gradient(315deg, #23af56 0%, #67A79A 100%);
       background-image: linear-gradient(135deg, #23af56 0%, #67A79A 100%); }
+      .wrapper .page.page3 h2 {
+        font-size: 1.4vw; }
     .wrapper .page.page4 {
       background-color: #412F2F;
       background-image: -webkit-linear-gradient(-430deg, #412F2F 15%, #6B2686 85%);
@@ -224,7 +226,7 @@ html body {
         transform: translateX(-50%) translateY(-50%) scale(0.7);
         opacity: 1; }
       .nav-panel ul .nav-btn:hover {
-        border-color: yellow;
+        border-color: black;
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2); }

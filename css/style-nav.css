@@ -13,7 +13,7 @@ Main Components
   position: fixed;
   z-index: 1000;
   top: 10%;
-  right: 6%;
+  right: 5%;
   height: 44px;
   width: 44px;
   /* image replacement */
@@ -121,7 +121,7 @@ xnavigation
   right: 0;
   width: 60%;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #ffffff;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -151,11 +151,11 @@ xnavigation
     -moz-transition: -moz-transform 0.4s 0.6s, box-shadow 0s 0s;
     transition: transform 0.4s 0.6s, box-shadow 0s 0s; }
   .cd-nav-container header {
-    padding: 1.5em 0 0 6.25%;
-    height: 2em;
+    padding: 10% 0 0 6.25%;
+    height: 20%;
     position: relative; }
   .cd-nav-container h3 {
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: bold;
     font-family: matematica,iron,"Lora", serif;
     /*text-transform: uppercase;*/
@@ -167,14 +167,14 @@ xnavigation
     width: 70%; }
     .cd-nav-container header {
       height: 116px;
-      padding-top: 3em; } }
+      padding-top: 2vh; } }
 .cd-close-nav {
   /* 'X' close icon */
   position: absolute;
   height: 44px;
   width: 44px;
   /* set the right position value so that it overlaps the .cd-nav-trigger*/
-  right: 6.25%;
+  right: 10%;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);

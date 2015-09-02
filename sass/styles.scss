@@ -65,12 +65,9 @@ body {
  transition: transform 1s ease-in-out;
  will-change: transform;
  h2 {
- border:2px solid white;
- border-radius:2em;
- padding:1em;
  color: white;
  position: absolute;
- top: 20%;
+ top: 50%;
  left: 50%;
  -webkit-transform: translateX(-50%) translateY(-50%);
  -ms-transform: translateX(-50%) translateY(-50%);
@@ -86,6 +83,9 @@ body {
         background-image: linear-gradient(10deg,#66a6b8 20%, #5471B9 80%); */
 }
  &.page2 {
+	 h2{
+		 color:#0022C4;
+		 font-weight:bolder;}
  background: url(../img/sun.jpg);
  background-repeat:no-repeat;
  background-size:cover;
@@ -96,6 +96,9 @@ body {
 	  
 }
  &.page3 {
+	
+	 h2{
+ font-size:1.4vw;}
  background-color: #23af56;
  background-image: -webkit-linear-gradient(-405deg, #23af56 0%, #67A79A 100%);
  background-image: -webkit-linear-gradient(315deg, #23af56 0%, #67A79A 100%);
@@ -267,7 +270,7 @@ ul {
  opacity: 1;
  background-color: yellow;
 }
- border-color: yellow;
+ border-color: black;
  -webkit-transform: scale(1.2);
  -ms-transform: scale(1.2);
  transform: scale(1.2);

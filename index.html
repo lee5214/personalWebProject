@@ -2,8 +2,9 @@
 <html lang="zh">
 <head>
 <title>Wecome</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="description" content="hackers geeks cyberlinks">
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/style-nav.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -58,7 +59,7 @@
 <section class="cd-section intro cd-selected">
 <div class="container-fluid">
   <div class="wrapper active-page1" >
-    <div class="cd-selected page page1"  > 
+    <div class="page page1"  > 
       
       <!--<header class="htmleaf-header" >
 			<h1>jQuery和CSS3超炫3D整屏垂直滚动页面特效 <span>A Vertical scrolling page Effect</span></h1>
@@ -72,14 +73,15 @@
         <video autoplay loop class="embed-responsive-item">
           <source src="img/countryview.mp4" />
         </video>
-      </div>
-      <div class="row">
+        <div class="row">
         <div id="overlay-title" class="overlay col-md-12"><!--use bootstrap to modify texts-->
           <p class="text-center">Welcome<br />
             to my cyber world</p>
         </div>
         <div id="overlay-mid" class="overlay col-md-8 col-md-offset-2">feel the power of geeks!</div>
       </div>
+      </div>
+      
     </div>
     
     <div class="page page2" >
@@ -89,7 +91,14 @@
     </div>
     
     <div class="page page3">
-      <h2>One huge advantage as self-schoolor is that I could choose to learn any stuff that interests me, here's what I got so far</h2>
+      <kbd><h1>Skillset:</h1> </kbd>
+      <dl class="dl-horizontal">
+      <h2><kbd>back-end: </kbd><dd>java c c++ </dd><br />
+      <kbd>front-end: </kbd><dd>html css javascript jquery</dd><br />
+      <kbd>plantform: </kbd><dd>windows linux</dd><br />
+      <kbd>tools: </kbd><dd>mysql netbeans bootstrap sass dreamweaver photoshop...</dd><br />
+      </h2>
+      </dl>
     </div>
     
     <div class="page page4">
@@ -109,7 +118,6 @@
         <li data-target="3" class="nav-btn nav-page3"></li>
         <li data-target="4" class="nav-btn nav-page4"></li>
         <li></li>
-        s
       </ul>
     </nav>
   </div>
@@ -119,7 +127,7 @@
   
   <nav class="cd-nav-container" >
     <header>
-      <h3>Warring! Access Requested  <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></h3>
+      <h3>Warring! Access Requested &nbsp;<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></h3>
       <a href="#0" class="cd-close-nav">Close</a> </header>
     <ul class="cd-nav">
       <li class="cd-selected" data-menu="index"> <a href="index.html"> <span>
@@ -214,7 +222,7 @@
 /*header title fade in*/
 $(document).ready(function() {//first page text
     $("#overlay-title").fadeIn(4000);
-	$("#overlay-mid").fadeIn(7000);
+	$("#overlay-mid").fadeIn(9000);
 });
 	'use strict';
 	$(document).ready(function () {
