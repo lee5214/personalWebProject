@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0; }
 
---------------------------------------pace loading-------------------------------------------------------------- >
+/*    pace loading   */
 .inner, .nav-panel ul .nav-btn:after {
   content: "";
   position: absolute;
@@ -33,6 +33,38 @@ html body {
   width: 100%;
   height: 100%;
   overflow: hidden; }
+  html body .embed-responsive {
+    /*set as background video(16:9)*/
+    position: relative;
+    z-index: 0; }
+  html body .overlay {
+    text-align: center;
+    font-family: matematica, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    display: none;
+    color: white;
+    font-size: 6vw;
+    /*vw=当前窗口1%宽度，vh高度*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1；; }
+  html body #overlay-title {
+    -webkit-animation: color-change 8s infinite; }
+  html body #overlay-mid {
+    color: green;
+    font-family: iron, Cambria;
+    font-size: 5vw;
+    font-weight: 500;
+    top: 60vh;
+    float: none;
+    border: solid pink 1px;
+    border-radius: 2em;
+    padding: 0.5em;
+    opacity: 0.8; }
+  html body audio {
+    z-index: 2;
+    position: relative;
+    float: right; }
 
 @media (max-width: 767px) {
   body {
@@ -75,16 +107,23 @@ html body {
               background-image: -webkit-linear-gradient(80deg, #66a6b8 20%, #5471B9 80%);
               background-image: linear-gradient(10deg,#66a6b8 20%, #5471B9 80%); */ }
     .wrapper .page.page2 {
-      background: url(../img/sun.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
       /* background-color: #f29c54;
             background-image: -webkit-linear-gradient(-315deg, #f29c54 0%, #DB4367 100%);
             background-image: -webkit-linear-gradient(45deg, #f29c54 0%, #DB4367 100%);
             background-image: linear-gradient(45deg, #f29c54 0%, #DB4367 100%);*/ }
+      .wrapper .page.page2 .p2Bg {
+        height: 80%;
+        width: 80%;
+        top: 10%;
+        left: 10%;
+        position: relative;
+        background: url(../img/sun.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; }
       .wrapper .page.page2 h2 {
-        color: #0022C4;
-        font-weight: bolder; }
+        color: black;
+        font-weight: bolder;
+        font-size: 2vw; }
     .wrapper .page.page3 {
       background-color: #23af56;
       background-image: -webkit-linear-gradient(-405deg, #23af56 0%, #67A79A 100%);
