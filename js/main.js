@@ -1,10 +1,22 @@
 
 	/*header title fade in*/
+	'use strict';
 	$(document).ready(function() {//first page text
-	    $("#overlay-title").fadeIn(4000);
-		$("#overlay-mid").fadeIn(9000);
+	    $(".pageTitle").fadeIn(4000);
+		$(".pageMid").fadeIn(9000);
 	});
-		'use strict';
+
+	$(document).ready(function(){
+		$("#bg").css('background-image','url(img/bgimg/bg'+Math.floor(Math.random()*24+1)+'.jpg)');
+		setInterval(function(){
+			var ran=Math.floor(Math.random()*24+1);
+			$("#bg").fadeOut(4000,function(){
+				$(this).css('background-image','url(img/bgimg/bg'+ran+'.jpg)' ).fadeIn(2000);
+			});	
+		},12000);
+
+	});
+		
 		$(document).ready(function () {
 		  var $wrap = $('.wrapper'), pages = $('.page').length, 
 			scrolling = false, currentPage = 1, $navPanel = $('.nav-panel'), 
